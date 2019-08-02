@@ -1,0 +1,14 @@
+{
+"companyName": "Deepseabunnies",
+"productName": "Mahjong Solitaire Just For Gramma",
+"dataUrl": "WebGLBuild04 Try 3 Default template.data.unityweb",
+"wasmCodeUrl": "WebGLBuild04 Try 3 Default template.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebGLBuild04 Try 3 Default template.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "WebGLBuild04 Try 3 Default template.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"}
+}
