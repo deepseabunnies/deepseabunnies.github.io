@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deepseabunnies</title>
+  <link rel="stylesheet" href="deepseabunnies.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="sitetitle">Madison Micklas</div>
+  <p align="center">Software developer and digital artist</p><br>
+
+  <ul class="nav">
+    <li class="nav"><a href="index.html">Home</a></li>
+    <li class="nav"><a class="thispage" href="games.html">Games</a></li>
+    <li class="nav"><a href="visualart.html">Visual art</a></li>
+  </ul>
+
+  <br><br>
+
+  <article>
+    <div class="gametitle">Convention Tycoon</div>
+    <p align="center">Unity, C# (2018 - present)</p>
+    <button class="playbutton" onclick="window.location.href = 'Games/CTWIP/index.html';">Play now!</button><br>
+
+    <img id="myImg" src="assets/screenshots/contycoon_01.png" alt="Convention Tycoon"><br>
+
+    <button class="collapsible">Game info & features</button>
+    <div class="content">
+      <br>
+      <ul>
+        <li>This is a tile-based isometric building and management game.</li>
+        <li>An in-game tutorial explains the game’s mechanics and helps the player become oriented with the UI.</li>
+        <li>The player can place or destroy floors, walls, and facilities on a grid. The game provides visual feedback indicating valid or invalid placement.</li>
+        <li>Characters use A* pathfinding to reach destinations based on their personal goals, which are determined using weighted probabilities and “character type.” “Staff” build and maintain facilities, while “guests” visit attractions and spend money.</li>
+        <li>Motion-tween style character animations were created directly in Unity.</li>
+        <li>Outfits are procedurally generated, and the player may customize their own character.</li>
+        <li>To help ensure a smooth workflow when adding new content, furniture and clothing items are defined in XML. The game uses those XML files to populate in-game lists of items, and to determine the correct sprites to use during gameplay.</li>
+        <li>The game can be saved and loaded using XML. Safeguards are in place to help increase compatibility with save files from old versions of the game.</li>
+      </ul>
+      <br>
+    </div>
+
+    <br><br>
+  </article>
+
+  <br><br><br>
+
+  <article>
+    <div class="gametitle">Mahjong Solitaire: Junk Journal Edition</div>
+    <p align="center">Unity, C# (2019)</p>
+  
+  <!-- <figure>
+    <img class="img4" src="assets/screenshots/mahjong_01.png">
+    <figcaption></figcaption>
+  </figure> -->
+  <button class="playbutton" onclick="window.location.href = 'Games/mahjong2-1better/index.html';">Play now!</button><br>
+
+  <img id="myImg" src="assets/screenshots/mahjong_01.png" alt="Mahjong Solitaire"><br>
+
+  <button class="collapsible">Game info & features</button>
+    <div class="content">
+      <br>
+      <ul>
+        <!-- <li>Unity, C#</li>
+        <li>2019</li> -->
+        <li>This is a casual matching game, with logic created from the ground up to provide the Mahjong Solitaire experience that seasoned players will expect.</li>
+        <li>The player chooses between several different layouts, which are loaded from plain text files. Layouts have an x, y, and z component. Based on the chosen layout, the game generates a random winnable level.</li>
+        <li>The player can choose from several tile sets, or allow the game to choose one at random. A developer can quickly add a new set with any number of unique tile designs (be it 2 or 200), and it will still work with the level generation.</li>
+        <li>The game features a hint button, a message if the player can no longer possibly clear the rest of the tiles, and visual and audio feedback when tiles are selected and matched.</li>
+
+      </ul>
+
+      Old versions:
+      <ul>
+        <li><a href="Games/mahjong2-1better/index.html">Latest: Version 2.1 (8/1/2019)</a></li>
+        <li><a href="Games/mahjong.html">Mahjong Version 2.0 (5/12/2019)</a></li>
+      </ul>
+      <br>
+    </div>
+
+    <br><br>
+
+  </article>
+
+  <h2>todo: footer</h2>
+
+  <br><br>
+
+  
+  
+
+
+
+
+
+
+
+ 
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+  
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+	
+</body>
+</html>
