@@ -13,7 +13,8 @@
   <ul class="nav">
     <li class="nav"><a href="index.html">Home</a></li>
     <li class="nav"><a class="thispage" href="games.html">Games</a></li>
-    <li class="nav"><a href="visualart.html">Visual art</a></li>
+    <li class="nav"><a href="digitalart.html">Digital art</a></li>
+    <li class="nav"><a href="resume.html">Résumé</a></li>
   </ul>
 
   <br><br>
@@ -21,20 +22,50 @@
   <article>
     <div class="gametitle">Convention Tycoon</div>
     <p align="center">Unity, C# (2018 - present)</p>
-    <button class="playbutton" onclick="window.location.href = 'Games/CTWIP/index.html';">Play now!</button><br>
+    <button class="playbutton" onclick="window.location.href = 'Games/CTWIP/index.html';">Play demo now!</button><br>
 
-    <img id="myImg" src="assets/screenshots/contycoon_01.png" alt="Convention Tycoon"><br>
+    <!-- <img id="myImg" src="assets/screenshots/contycoon_01.png" alt="Convention Tycoon"><br> -->
+
+    <h1>Screenshots</h1>
+        <p class="centertext">Click on an image to see a bigger version.</p>
+        
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="imgSpot2" style="width:100%">
+          <div id="textSpot2" class="imgtext2"></div>
+        </div>
+      
+        <div class="flex-container">
+          <img class="img1" src="assets/screenshots/contycoon_01.png" alt="Now THAT'S an artist alley!" onclick="expandImg(this, 2);">
+          <img class="img1" src="assets/screenshots/contycoon/walk_on_water_con.png" alt="The first annual Walk On Water Con" onclick="expandImg(this, 2);">
+          <!-- <img class="img1" src="assets/screenshots/contycoon/big_ol_aa.png" alt="A big ol Artist Alley (after The Boys Update)" onclick="expandImg(this, 2);"> -->
+          <img class="img1" src="assets/screenshots/contycoon/cherry_blossom_love.png" alt="Love in the cherry blossom forest" onclick="expandImg(this, 2);">
+          <img class="img1" src="assets/screenshots/contycoon/ramen_park.png" alt="Where did you get WcDonald's? There are only ramen shops on this street." onclick="expandImg(this, 2);">  
+
+          <img class="img1" src="assets/screenshots/contycoon/crowded.png" alt="&quot;Convention 1 is too crowded&quot;" onclick="expandImg(this, 2);">  
+          <!-- <img class="img1" src="assets/screenshots/contycoon/depression.png" alt="The con-goers have skin conditions and depression..." onclick="expandImg(this, 2);">
+          <img class="img1" src="assets/screenshots/contycoon/littering.png" alt="Introducing the Littering Update! Now characters, uh...litter" onclick="expandImg(this, 2);">  
+          <img class="img1" src="assets/screenshots/contycoon/corrupted_vn.png" alt="Alien language localization is going well" onclick="expandImg(this, 2);">  
+          <img class="img1" src="assets/screenshots/contycoon/jamie_great_power.png" alt="I MADE HIS POWER TOO GREAT" onclick="expandImg(this, 2);">   -->
+          <img class="img1" src="assets/screenshots/contycoon/eyesore_arcade.png" alt="The eyesore arcade" onclick="expandImg(this, 2);">
+          <img class="img1" src="assets/screenshots/contycoon/screenshot_character_customization.png" alt="Customize your character!"  onclick="expandImg(this, 2);">
+          <img class="img1" src="assets/screenshots/contycoon/scenery_vaporwave_and_buns.png" alt="a e s t h e t i c"  onclick="expandImg(this, 2);">
+          <img class="img1" src="assets/screenshots/contycoon/screenshot_ballpit.png" alt="You can have an extra hour in the ball pit"  onclick="expandImg(this, 2);">  
+        </div>
+        <br><br><br>
 
     <button class="collapsible">Game info & features</button>
     <div class="content">
       <br>
       <ul>
-        <li>This is a tile-based isometric building and management game.</li>
+        <li>Please pardon the dust - this is a pre-pre-alpha!</li>
+        <li>Convention Tycoon is a tile-based isometric building and management game.</li>
         <li>An in-game tutorial explains the game’s mechanics and helps the player become oriented with the UI.</li>
         <li>The player can place or destroy floors, walls, and facilities on a grid. The game provides visual feedback indicating valid or invalid placement.</li>
         <li>Characters use A* pathfinding to reach destinations based on their personal goals, which are determined using weighted probabilities and “character type.” “Staff” build and maintain facilities, while “guests” visit attractions and spend money.</li>
         <li>Motion-tween style character animations were created directly in Unity.</li>
         <li>Outfits are procedurally generated, and the player may customize their own character.</li>
+        <li>The game makes use of Unity UI elements, layout groups, prefabs, and dynamically populated menus.</li>
         <li>To help ensure a smooth workflow when adding new content, furniture and clothing items are defined in XML. The game uses those XML files to populate in-game lists of items, and to determine the correct sprites to use during gameplay.</li>
         <li>The game can be saved and loaded using XML. Safeguards are in place to help increase compatibility with save files from old versions of the game.</li>
       </ul>
@@ -54,9 +85,9 @@
     <img class="img4" src="assets/screenshots/mahjong_01.png">
     <figcaption></figcaption>
   </figure> -->
-  <button class="playbutton" onclick="window.location.href = 'Games/mahjong2-1better/index.html';">Play now!</button><br>
+  <button class="playbutton" onclick="window.location.href = 'Games/mahjong2-1better/index.html';">Play now!</button><br><br>
 
-  <img id="myImg" src="assets/screenshots/mahjong_01.png" alt="Mahjong Solitaire"><br>
+  <img id="myImg" src="assets/screenshots/mahjong_01.png" alt="Mahjong Solitaire"><br><br>
 
   <button class="collapsible">Game info & features</button>
     <div class="content">
@@ -112,7 +143,7 @@
       } 
     });
   }
-  </script>
+</script>
 
   
 
@@ -124,26 +155,62 @@
 </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
+  /* document.getElementById("myImg2").addEventListener(
+    "click",
+    function() {
+      openModal("myImg2","img01","caption");
+    }
+  );
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  function openModal(img, modalImg, caption) {
+    var modal = document.getElementById('myModal');
+    
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  }
+ */
+
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+</script>
+
+<script>
+  function expandImg(imgs, galNumber) {
+      var expandImg = document.getElementById('imgSpot' + galNumber);
+      expandImg.src = imgs.src;
+      expandImg.parentElement.style.display = "block";
+
+      var imgText = document.getElementById('textSpot' + galNumber);
+      imgText.innerHTML = imgs.alt;    
+  }
 </script>
 	
 </body>

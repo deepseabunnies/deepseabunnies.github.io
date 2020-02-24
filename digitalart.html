@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Deepseabunnies: Visual art</title>
+  <title>Deepseabunnies: Digital art</title>
   <link rel="stylesheet" href="deepseabunnies.css">
+
+  <script>
+    function expandImg(imgs, galNumber) {
+        var expandImg = document.getElementById('imgSpot' + galNumber);
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+
+        var imgText = document.getElementById('textSpot' + galNumber);
+        imgText.innerHTML = imgs.alt;    
+    }
+  </script>
+  
 </head>
 <body>
 
@@ -12,7 +24,8 @@
     <ul class="nav">
         <li class="nav"><a href="index.html">Home</a></li>
         <li class="nav"><a href="games.html">Games</a></li>
-        <li class="nav"><a class="thispage" href="visualart.html">Visual art</a></li>
+        <li class="nav"><a class="thispage" href="digitalart.html">Digital art</a></li>
+        <li class="nav"><a href="resume.html">Résumé</a></li>
       </ul>
 
   <br>
@@ -27,16 +40,38 @@
       <img id="myImg" src="assets/ct_hair_template.png" alt="Convention Tycoon hair template">
       
       <br>
-      <div class="gametitle">Isopod Girls</div><br>
+      <div class="gametitle">Isopod Girls</div>
+      <p align="center">2019 - Present</p>
 
       <p>I provided character designs and comics for a (semi-)educational project called Isopod Girls! Commercial entomologist <a href="http://roachcrossing.com">Roach Crossing</a> has used these characters to help expand his audience, and to provide encouragement to fellow bug-keepers.</p>
       <p>For this project, I was tasked with designing flirty, anime-inspired characters who resemble different breeds of isopods. To strengthen the "Isopod Girls" brand, I made sure the girls' personalities and fashion senses were distinct and easy to read.</p>
     
-      <div class="flex-container">
+      <!-- <div class="flex-container">
         <img class="img3" src="assets/isogirls/manca.png" alt="Isopod Girls: Manca-chan">
         <img class="img3" src="assets/isogirls/zebra.png" alt="Isopod Girls: Zebra-chan">
         <img class="img3" src="assets/isogirls/scorpia.png" alt="Isopod Girls: Scorpia">
+		<img class="img3" src="assets/isogirls/isogirls comic 01.png" alt="Isopod Girls #01: Boxed Lunch">
+      </div> -->
+
+
+
+      <p class="centertext">Click on an image to see a bigger version.</p>
+    
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img class="img3-2" id="imgSpot1">
+        <div id="textSpot1" class="imgtext2"></div>
       </div>
+    
+      <div class="flex-container">
+        <img class="img1" src="assets/isogirls/manca.png" alt="Isopod Girls: Manca-chan" onclick="expandImg(this, 1);">
+        <img class="img1" src="assets/isogirls/zebra.png" alt="Isopod Girls: Zebra-chan" onclick="expandImg(this, 1);">  
+        <img class="img1" src="assets/isogirls/scorpia.png" alt="Isopod Girls: Scorpia" onclick="expandImg(this, 1);">  
+        <img class="img1" src="assets/isogirls/isogirls comic 01.png" alt="Isopod Girls #01: Boxed Lunch" onclick="expandImg(this, 1);">  
+      </div>
+      
+      <br>
+	  
     
   </article>
   <br><br>
@@ -74,7 +109,9 @@
         modal.style.display = "none";
       }
       </script>
-	
+  
+  
+  <script type="text/javascript" src="js/gallery.js" charset="utf-8"></script>
 </body>
 
 

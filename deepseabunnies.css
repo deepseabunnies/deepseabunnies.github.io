@@ -246,6 +246,12 @@
     margin-left: auto;
     margin-right: auto; 
   }
+  .img3-2 {
+    height: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+  }
 
   .img4 {
     max-width: 800px;
@@ -746,4 +752,25 @@
   .playbutton:hover {
     background-color: #94f8a1;
   }
+
+  .row {
+    display: flex;
+    
+  }
+
+
+  .column {
+    float: left;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
   
+  .left {
+    width: 30%;
+    text-align: right;
+  }
+  
+  .right {
+    width: 70%;
+    text-align: left;
+  }
