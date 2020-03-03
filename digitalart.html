@@ -29,51 +29,71 @@
     <ul class="nav">
          
         <li class="nav"><a href="index.html">Games</a></li>
-        <li class="nav"><a class="thispage" href="digitalart.html">Digital art</a></li>
+        <li class="nav"><a class="thispage" href="digitalart.html">3D Modeling and 2D Art</a></li>
         <li class="nav"><a href="resume.html">Résumé</a></li>
       </ul>
 
   <br>
   <article>
-      <p>Check out some of my works on <a href="https://www.deviantart.com/deepseabunnies/gallery">DeviantArt!</a></p>
-      <p>I currently use Clip Studio Paint, but I am also comfortable with Photoshop, Paint Tool Sai, GIMP, and similar art programs.</p>
-      <p>To animate, I currently use Live2D Cubism and Unity.</p>
+      <div class="gametitle">3D Modeling</div><br>
+
+      <p>I am currently learning modeling and animation in Blender. Here are some things I've made!</p><br>
+    
+
+      <div class='sketchfab-embed-wrapper'> <div style="width: 100%; padding-bottom: 56.25%; position: relative"> <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe src="https://sketchfab.com/models/635398ec2d944575bb6d6c541d7c23aa/embed?" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> </div> </div> </div>
+      <br>
+
+      <p class="centertext">Gallery</p>
+
+      <div class="flex-container">
+          <img class="img1" src="assets/3d/station 1.png" alt="Renaissance Center station 1" onclick="expandImg(this, 1);">
+          <img class="img1" src="assets/3d/station 2.png" alt="Renaissance Center station 2" onclick="expandImg(this, 1);"> 
+          <img class="img1" src="assets/3d/station 3.png" alt="Renaissance Center station 3" onclick="expandImg(this, 1);"> 
+          <img class="img1" src="assets/3d/station 4.png" alt="Renaissance Center station 4" onclick="expandImg(this, 1);"> 
+          <img class="img1" src="assets/3d/bus 1.png" alt="London bus 1" onclick="expandImg(this, 1);"> 
+          <img class="img1" src="assets/3d/bus 2.png" alt="London bus 2" onclick="expandImg(this, 1);"> 
+        </div>
+        <br>
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img class="img3-3" id="imgSpot1">
+            <div id="textSpot1" class="imgtext2"></div>
+          </div>
+
+
+      <br><br>
+
+      <hr>
+      <div class="gametitle">2D Art</div><br>
+
+      <!-- <p>Check out some of my works on <a href="https://www.deviantart.com/deepseabunnies/gallery">DeviantArt!</a></p> -->
+      <p>I love to draw in my free time! I am comfortable with Photoshop, GIMP, Clip Studio Paint, and similar art programs.</p>
+      <!-- <p>To animate, I currently use Live2D Cubism and Unity.</p> -->
     
       <div class="gametitle">Game Art</div><br>
       </p>I did all the art for Convention Tycoon, and some of the art for Mahjong Solitaire: Junk Journal Edition.</p>
-      <p>Whenever I can, I create and use templates to make it as easy as possible to implement and manage the art in the final project.</p>
+      <p>Whenever I can, I create and use templates to make it as easy as possible to implement the art in the final project. A little bit of planning definitely pays off!</p><br>
       <img id="myImg" src="assets/ct_hair_template.png" alt="Convention Tycoon hair template">
       
       <br>
-      <div class="gametitle">Isopod Girls</div>
-      <p align="center">2019 - Present</p>
+      <div class="gametitle">Commissions</div><br>
+      <p>Here is some art I've provided for clients Roach Crossing and The Graey Zone!</p><br>
 
-      <p>I provided character designs and comics for a (semi-)educational project called Isopod Girls! Commercial entomologist <a href="http://roachcrossing.com">Roach Crossing</a> has used these characters to help expand his audience, and to provide encouragement to fellow bug-keepers.</p>
-      <p>For this project, I was tasked with designing flirty, anime-inspired characters who resemble different breeds of isopods. To strengthen the "Isopod Girls" brand, I made sure the girls' personalities and fashion senses were distinct and easy to read.</p>
-    
-      <!-- <div class="flex-container">
-        <img class="img3" src="assets/isogirls/manca.png" alt="Isopod Girls: Manca-chan">
-        <img class="img3" src="assets/isogirls/zebra.png" alt="Isopod Girls: Zebra-chan">
-        <img class="img3" src="assets/isogirls/scorpia.png" alt="Isopod Girls: Scorpia">
-		<img class="img3" src="assets/isogirls/isogirls comic 01.png" alt="Isopod Girls #01: Boxed Lunch">
-      </div> -->
-
-
-
-      <p class="centertext">Click on an image to see a bigger version.</p>
-    
-      <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img class="img3-2" id="imgSpot1">
-        <div id="textSpot1" class="imgtext2"></div>
-      </div>
+      <!-- <p class="centertext">Click on an image to see a bigger version.</p> -->
     
       <div class="flex-container">
-        <img class="img1" src="assets/isogirls/manca.png" alt="Isopod Girls: Manca-chan" onclick="expandImg(this, 1);">
-        <img class="img1" src="assets/isogirls/zebra.png" alt="Isopod Girls: Zebra-chan" onclick="expandImg(this, 1);">  
-        <img class="img1" src="assets/isogirls/scorpia.png" alt="Isopod Girls: Scorpia" onclick="expandImg(this, 1);">  
-        <img class="img1" src="assets/isogirls/isogirls comic 01.png" alt="Isopod Girls #01: Boxed Lunch" onclick="expandImg(this, 1);">  
-      </div>
+        <img class="img1" src="assets/eli test 1 smol.png" alt="The Graey Zone" onclick="expandImg(this, 2);">  
+        <img class="img1" src="assets/isogirls/manca.png" alt="Isopod Girls: Manca-chan" onclick="expandImg(this, 2);">
+        <img class="img1" src="assets/isogirls/zebra.png" alt="Isopod Girls: Zebra-chan" onclick="expandImg(this, 2);">  
+        <img class="img1" src="assets/isogirls/scorpia.png" alt="Isopod Girls: Scorpia" onclick="expandImg(this, 2);">
+        <img class="img1" src="assets/isogirls/isogirls comic 01.png" alt="Isopod Girls #01: Boxed Lunch" onclick="expandImg(this, 2);">
+      </div><br>
+
+      <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img class="img3-3" id="imgSpot2">
+          <div id="textSpot2" class="imgtext2"></div>
+        </div>
       
       <br>
 	  
