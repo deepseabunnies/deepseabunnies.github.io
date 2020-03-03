@@ -6,13 +6,26 @@
     <title>Unity WebGL Player | Convention Tycoon</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="../../deepseabunnies.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/10 - webgl.json", {onProgress: UnityProgress});
     </script>
+
+    <script type="text/javascript">
+      window.onbeforeunload = confirmExit;
+      function confirmExit()
+      {
+        return "Do you want to leave this page without saving?";
+      }
+    </script>
+
   </head>
-  <body>
+
+  <br><button class="backbutton" onclick="window.location.href = '../../index.html';">Back to main site</button><br>
+
+  <body> 
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
@@ -21,5 +34,6 @@
         <div class="title">Convention Tycoon</div>
       </div>
     </div>
+    
   </body>
 </html>

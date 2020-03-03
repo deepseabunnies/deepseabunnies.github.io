@@ -758,6 +758,29 @@
   .playbutton:hover {
     background-color: #94f8a1;
   }
+  .backbutton {
+    font-family: Montserrat, sans-serif;;
+    background-color: #e2e7f0;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-left: 6px solid #a3a7ad;
+    border-right: 6px solid #a3a7ad;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .backbutton:hover {
+    background-color: #d1d8e6;
+  }
 
   .row {
     display: flex;
