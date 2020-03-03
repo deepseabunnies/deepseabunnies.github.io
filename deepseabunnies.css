@@ -137,6 +137,14 @@
   }
   
 
+  .webgl-content { 
+    position: relative !important;
+    margin: 20px auto 0 !important;
+    width: 960px !important;
+    height: 600px !important;
+  }
+
+
   
   /* Nav bar */
 
