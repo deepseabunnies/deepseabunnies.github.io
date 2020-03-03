@@ -1,0 +1,16 @@
+{
+"companyName": "Deepseabunnies",
+"productName": "Convention Tycoon",
+"productVersion": "0.422",
+"dataUrl": "11 fixed - webgl.data.unityweb",
+"wasmCodeUrl": "11 fixed - webgl.wasm.code.unityweb",
+"wasmFrameworkUrl": "11 fixed - webgl.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "11 fixed - webgl.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0a3"
+}
